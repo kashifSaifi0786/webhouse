@@ -1,0 +1,397 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+:root {
+  --primary-color: #00334e;
+  --secondary-color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Lato", sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+html {
+  font-size: 62.5%;
+}
+
+/* Navbar */
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.6rem;
+}
+h1,
+h2 {
+  line-height: 1.2;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 1rem 0rem;
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2rem;
+  font-weight: normal;
+}
+p,
+h4 {
+  margin: 1rem 0rem;
+  font-size: 1.6rem;
+}
+h4 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+img {
+  width: 100%;
+}
+.logo {
+  margin-left: 4rem;
+}
+.head {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  height: 7rem;
+}
+.navbar {
+  background-color: var(--primary-color);
+  color: #fff;
+  height: 70px;
+}
+.navbar .flex {
+  justify-content: space-between;
+}
+.navbar ul {
+  display: flex;
+  margin: 2rem;
+}
+.navbar li {
+  padding: 0 2rem;
+}
+.navbar a {
+  color: var(--secondary-color);
+  padding: 1rem;
+  margin: 0 0.5rem;
+}
+.navbar a:hover {
+  border-bottom: 2px solid var(--secondary-color);
+}
+/* Showcase */
+.showcase {
+  height: 38rem;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  position: relative;
+}
+.showcase h1 {
+  font-size: 4.5rem;
+  margin-left: 4.8rem;
+}
+.showcase p {
+  margin: 2rem 0rem;
+  font-size: 1.6rem;
+  margin-left: 4.8rem;
+}
+.showcase .grid {
+  grid-template-columns: 60% 40%;
+  gap: 3rem;
+  overflow: visible;
+}
+.showcase-form {
+  position: relative;
+  top: 6rem;
+  min-height: 35rem;
+  width: 35rem;
+  justify-self: flex-end;
+  z-index: 100;
+}
+.showcase-text a {
+  max-width: 16rem;
+  margin-left: 4.8rem;
+}
+.showcase-text {
+  animation: slideFromLeft 1s ease-in;
+}
+.showcase-form .form-control {
+  margin: 3rem 0;
+}
+.showcase-form input[type="text"],
+.showcase-form input[type="email"] {
+  border: none;
+  border-bottom: 2px solid #b4becb;
+  width: 100%;
+  padding: 0.3rem;
+  font-size: 1.6rem;
+}
+.showcase-form input:focus {
+  outline: none;
+}
+.showcase-form {
+  animation: slideFromRight 1s ease-in;
+}
+.showcase::before,
+.showcase::after {
+  content: "";
+  position: absolute;
+  height: 10rem;
+  left: 0;
+  right: 0;
+  background: var(--secondary-color);
+  bottom: -7rem;
+  transform: skewY(-3deg);
+  -webkit-transform: skewY(-3deg);
+  -moz-transform: skewY(-3deg);
+  -ms-transform: skewY(-3deg);
+}
+.btn {
+  display: inline-block;
+  border: none;
+  padding: 1rem 3rem;
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  font-size: 1.9rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  cursor: pointer;
+}
+.btn-outline {
+  background-color: transparent;
+  border: 1px solid var(--secondary-color);
+}
+.btn:hover {
+  background: #66bfbf;
+  transform: scale(0.96);
+}
+
+/* stats */
+.stats {
+  padding: 10rem;
+  margin-bottom: -10rem;
+  animation: slideFromBottom 1s ease-in;
+}
+.stats-heading {
+  max-width: 50rem;
+  margin: auto;
+}
+.stats .grid h3 {
+  font-size: 3.5rem;
+  font-weight: bolder;
+}
+.stats .grid p {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* cli */
+
+.cli .grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+.cli .grid > *:first-child {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+}
+/* cloud */
+.container .text-center a {
+  max-width: 16rem;
+}
+/* cloud */
+.cloud {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  max-width: 100%;
+  max-height: max-content;
+}
+.cloud img {
+  height: 25rem;
+}
+.btn-dark {
+  border: 1px solid #fff;
+  border-radius: 0.5rem;
+}
+/* Language */
+.language {
+  margin: 3rem;
+}
+.language .flex {
+  flex-wrap: wrap;
+}
+.language .container {
+  min-width: 100%;
+  margin-top: 2.5rem;
+}
+.language .form-card {
+  width: 10rem;
+  height: 14rem;
+  transition: transform 0.2s ease-in;
+}
+.language .form-card:hover {
+  transform: translateY(-1rem);
+}
+/* footer */
+.footer {
+  background-color: var(--third-color);
+  color: var(--secondary-color);
+}
+.footer .flex {
+  flex-direction: column;
+}
+.social-icon a {
+  margin: 0 1rem;
+}
+.footer .flex a:hover {
+  border-bottom: 2px solid var(--secondary-color);
+}
+
+/* animation */
+
+@keyframes slideFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slideFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slideFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slideFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+/* Tablet and under */
+@media (max-width: 76.8rem) {
+  html {
+    font-size: 50%;
+  }
+  p {
+    font-size: 1.6rem;
+  }
+
+  .container.grid {
+    /* display: flex; */
+  }
+  .navbar {
+    margin-top: 2.6rem;
+  }
+  .grid,
+  .showcase .grid,
+  .stats .grid,
+  .cli .grid,
+  .cloud .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .stats {
+    animation: none;
+  }
+
+  .showcase {
+    height: auto;
+  }
+  .showcase-text {
+    text-align: center;
+    margin: 4rem 0;
+  }
+  .showcase-form {
+    justify-self: center;
+    margin-top: auto;
+  }
+  .showcase-form {
+    animation: slideFromBottom 1s ease-in;
+  }
+
+  .cli .grid > *:first-child {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .cli img {
+    height: 26rem;
+  }
+  .cli .form-card {
+    height: 8rem;
+    margin-bottom: 1rem;
+    padding: 2rem 0;
+    margin-top: -7px;
+  }
+  .cloud {
+    height: auto;
+  }
+  .cloud img {
+    margin-top: 3rem;
+    height: 35rem;
+  }
+}
+/* Mobile */
+@media (max-width: 50rem) {
+  .navbar {
+    height: auto;
+  }
+  .head {
+    height: auto;
+  }
+  .head .flex {
+    flex-direction: column;
+  }
+  .showcase h1 {
+    margin-left: 0;
+  }
+  .showcase p {
+    margin: 2rem 2rem;
+    font-size: 1.6rem;
+    /* margin-left: 4.8rem; */
+  }
+  .showcase-text a {
+    max-width: 16rem;
+    margin-left: 0rem;
+  }
+  .container {
+    display: contents;
+  }
+  h3 {
+    margin: 0 1rem;
+    text-align: center;
+  }
+  ul {
+    display: flex;
+    align-items: center;
+    padding: 0.7rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-bottom: auto;
+  }
+  .language {
+    margin: 0px;
+  }
+  .social-icon {
+    margin-left: 3rem;
+  }
+}

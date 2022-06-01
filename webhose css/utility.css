@@ -1,0 +1,144 @@
+:root {
+  --primary-color: #00334e;
+  --secondary-color: #fff;
+  --third-color: #189ab4;
+  --fourth-color: #5cb85c;
+}
+/* Utility class */
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 4rem;
+}
+.form-card {
+  background-color: var(--secondary-color);
+  color: #333;
+  border-radius: 1rem;
+  box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.89);
+  padding: 2rem;
+  margin: 1rem;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: max-content;
+  width: 100%;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+a {
+  color: white;
+}
+pre code {
+  background-color: #333;
+  color: #fff;
+  font-size: initial;
+  padding: 1rem;
+}
+
+/* text center */
+.text-center {
+  text-align: center;
+}
+.alert {
+  background-color: #5cb85c;
+  color: var(--secondary-color);
+  font-weight: bold;
+  padding: 1rem 1.5rem;
+  margin: 1rem 0;
+}
+.alert-success {
+  background-color: #5cb85c;
+  color: var(--secondary-color);
+}
+
+/* margin */
+.my-1 {
+  margin: 1.6rem 0;
+}
+.my-2 {
+  margin: 2.4rem 0;
+}
+.my-3 {
+  margin: 3.2rem 0;
+}
+.my-4 {
+  margin: 4.8rem 0;
+}
+.my-5 {
+  margin: 6.4rem 0;
+}
+
+.m-1 {
+  margin: 1.6rem;
+}
+.m-2 {
+  margin: 2.4rem;
+}
+.m-3 {
+  margin: 3.2rem;
+}
+.m-4 {
+  margin: 4.8rem;
+}
+.m-5 {
+  margin: 6.4rem;
+}
+/* padding */
+
+.py-1 {
+  padding: 1.6rem 0;
+}
+.py-2 {
+  padding: 2.4rem;
+}
+.py-3 {
+  padding: 3.2rem 0;
+}
+.py-4 {
+  padding: 4.8rem 0;
+}
+.py-5 {
+  padding: 6.4rem 0;
+}
+
+.p-1 {
+  padding: 1.6rem;
+}
+.p-2 {
+  padding: 2.4rem;
+}
+.p-3 {
+  padding: 3.2rem;
+}
+.p-4 {
+  padding: 4.8rem;
+}
+.p-5 {
+  padding: 6.4rem;
+}
+/* color  */
+.bg-secondary {
+  background-color: var(--secondary-color);
+}
+.bg-primary {
+  background-color: var(--primary-color);
+}
+.bg-third {
+  background-color: var(--third-color);
+}
+.bg-light {
+  background-color: var(--fourth-color);
+}
